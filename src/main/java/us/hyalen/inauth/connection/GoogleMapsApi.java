@@ -20,11 +20,11 @@ public class GoogleMapsApi extends HttpConnection {
         Gson gson = builder.create();
 
         // Set initial parameters
-        Map<String, String> parameters = new HashMap<>();
+        Map<String, String> parameters = new HashMap<String, String>();
 
         // Get location
         parameters.put("latlng", latitude.toString() + "," + longitude.toString());
-        parameters.put("key", "PUT YOUR KEY HERE");
+        parameters.put("key", "AIzaSyCTWAOF_H060Hi9GKYHvRApqrWPrOCjGI0");
         String json = getRequest(GET_REQUEST, BASE_URI_STRING, parameters);
 
         return json;

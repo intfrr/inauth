@@ -3,7 +3,7 @@ package us.hyalen.inauth.core.location.v1;
 import com.javadocmd.simplelatlng.LatLng;
 import com.javadocmd.simplelatlng.LatLngTool;
 import com.javadocmd.simplelatlng.util.LengthUnit;
-import org.omg.IOP.ENCODING_CDR_ENCAPS;
+//import org.omg.IOP.ENCODING_CDR_ENCAPS;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import us.hyalen.inauth.domain.Location;
@@ -81,7 +81,7 @@ public class LocationService {
     }
 
     private Map<String, LatLng> getAssessmentMap(Double latitude, Double longitude) {
-        Map<String, LatLng> map = new HashMap<>();
+        Map<String, LatLng> map = new HashMap<String, LatLng>();
 
         map.put(TOKYO, new LatLng(TOKYO_LATITUDE, TOKYO_LONGITUDE));
         map.put(SYDNEY, new LatLng(SYDNEY_LATITUDE, SYDNEY_LONGITUDE));

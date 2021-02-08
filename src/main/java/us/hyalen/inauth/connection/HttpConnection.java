@@ -44,7 +44,8 @@ public class HttpConnection {
         InputStreamReader inputStream = new InputStreamReader(connection.getInputStream());
         StringBuilder response = new StringBuilder();
 
-        try (BufferedReader reader = new BufferedReader(inputStream)) {
+        try {
+        		BufferedReader reader = new BufferedReader(inputStream);
             String output;
 
             while ((output = reader.readLine()) != null)
